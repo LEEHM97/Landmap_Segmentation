@@ -13,6 +13,7 @@ def make_transform():
         A.ShiftScaleRotate(shift_limit=0.2, scale_limit=0.2, rotate_limit=10, 
                         border_mode=cv2.BORDER_CONSTANT, p=0.5), 
         A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, brightness_by_max=True, p=0.5),
+        A.RandomCrop(320, 320),
     ]
 
     train_transform.extend(base_transform)
