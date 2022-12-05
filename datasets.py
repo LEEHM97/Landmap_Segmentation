@@ -1,5 +1,7 @@
 import cv2
 import torch
+import numpy as np
+import os
 
 class SegmentationDataset(torch.utils.data.Dataset):
     def __init__(self, images, masks, augmentations):
@@ -29,3 +31,23 @@ class SegmentationDataset(torch.utils.data.Dataset):
         mask = torch.round(torch.Tensor(mask)/255.0)
 
         return image, mask
+    
+class TestDataset(torch.utils.data.Dataset):
+    def __init__(self, df, img_dir):
+        self.df = df
+        self.img_dir = img_dir
+        
+    def __len__(self):
+        return len(self.df)
+    
+    def __getitem__(self, idx):
+        row = self.df.iloc[idx]
+        imname = row['img']
+        image_path = os.path.join(self.img_dir,imname)
+        
+        image = cv2.imread(image_path)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = np.transpose(image, (2,0,1)).astype(np.float32)
+        image = torch.Tensor(image) / 255.0
+        
+        return image,imname
