@@ -100,7 +100,7 @@
 
 ## 5. Model Evaluation
 
-**[Encoders]**
+**[5-1. Encoders]**
 | Encoders      | Loss          | mIoU  |
 | ------------- |:-------------:| -----:|
 | EfficientnetB2      | 0.06575      |   0.7508 |
@@ -113,7 +113,7 @@
 
 <br>
 
-**[Losses]**
+**[5-2. Losses]**
 | Losses        | Loss          | mIoU  |
 | ------------- |:-------------:| -----:|
 | DiceLoss      | 0.1747      |   0.7081 |
@@ -127,10 +127,12 @@
 
 <br>
 
-**[Models]**
+**[5-3. Models]**
 | Models        | Loss          | mIoU  |
 | ------------- |:-------------:| -----:|
 | Unet      | 0.0749      |   0.7193 |
 | Unet++    | 0.06269      |    0.7817 |
 | DeepLabV3+     | 0.06782      |    0.7403 |
 | Ensemble    | 0.04267      |    0.8163 |
+
+## 6. Result
