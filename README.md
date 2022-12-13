@@ -135,4 +135,8 @@
 | DeepLabV3+     | 0.06782      |    0.7403 |
 | Ensemble    | 0.04267      |    0.8163 |
 
+<br>
+
 ## 6. Result
+- mIoU Final Score: 0.7263
+- 2등 / 136팀
