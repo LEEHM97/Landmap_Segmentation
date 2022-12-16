@@ -142,7 +142,7 @@
 <br>
 
 ## 6. Result
-- mIoU Final Score: 0.7263
+- mIoU Private Score: 0.7263
 - 2등 / 134팀
 
 <br>
