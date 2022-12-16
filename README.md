@@ -2,7 +2,7 @@
 
 <br>
 
-## 1. Data set
+## 1. Dataset
 
 - Input: 512X512 크기의 항공/위성사진
 - Target: 512X512 크기의 마스크
