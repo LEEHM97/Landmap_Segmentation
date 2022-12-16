@@ -38,11 +38,15 @@
 
 
 **mIoU**
-- IoU(Intersection over Union)
+- IoU(Intersection over Union) <br>
+![image](https://user-images.githubusercontent.com/67961082/208120795-a173e110-79ad-4b82-8241-16e5f3ab7f69.png)
+
 
 <br>
 
-- mIoU(Mean Intersection over Union)
+- mIoU(Mean Intersection over Union) <br>
+![image](https://user-images.githubusercontent.com/67961082/208120828-f43b03d8-f87f-4d54-a7cb-376f109e9fa5.png)
+
 
 <br>
 
